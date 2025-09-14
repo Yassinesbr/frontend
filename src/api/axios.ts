@@ -4,7 +4,7 @@ const api = axios.create({
   // baseURL: import.meta.env.VITE_DATABASE_URL || "http://localhost:3000",
   // set the baseURL based on if we local , or deployed
   baseURL: import.meta.env.VITE_API_URL || "http://localhost:3000",
-  withCredentials: true, // Set to true if using cookies/session
+  // withCredentials: true,
 });
 
 api.interceptors.request.use((config) => {
